@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прикрепить банк. карту</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bcard">
+            <div class="bcard__title">ПРИКРЕПИТЬ <br> БАНКОВСКУЮ КАРТУ</div>
+            <div class="bcard__wrapper">
+                <form class="bcard__form" action="/">
+                    <div class="bcard__front">
+                        <input class="bcard__card-number" type="tel" id="card-number">
+                        <input class="bcard__card-author-name" type="text" id="card-name">
+                        <input class="bcard__card-date" type="tel" id="card-date">
+                        <div class="bcard__card-logo">
+                            <img src="images/bank-card/card-logo.svg" alt="logo">
+                            <p class="bcard__card-name">mastercard</p>
+                        </div>
+                    </div>
+                    <div class="bcard__back">
+                        <div class="bcard__back-input">
+                            <label class="bcard__cvs-label" for="cvs-code">CVS <span>код</span></label>
+                            <input class="bcard__cvs-code" type="tel" id="cvs-code">
+                        </div>
+                    </div>
+                    <a href="#" class="bcard__back-btn">
+                        <img src="images/bank-card/back-btn.svg" alt="back">
+                        вернуться
+                    </a>
+                    <button type="submit" class="bcard__form-btn">прикрепить</button>
+                </form>
+            </div>
+            <div class="bcard__footer bcard__footer">
+                <div class="bcard__footer-wrapper">
+                    <a href="#" class="bcard__prizes">
+                        <img src="images/about-app/footer-prizes.svg" alt="icon">
+                    </a>
+                    <a href="#" class="bcard__scanner">
+                        <div class="bcard__scanner-border">
+                            <img src="images/about-app/footer-scanner.svg" alt="icon">
+                        </div>
+                    </a>
+                    <a href="#" class="bcard__profile">
+                        <img class="bcard__profile-active" src="images/about-app/active-line.svg" alt="" width="46">
+                        <img src="images/about-app/profile.svg" alt="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

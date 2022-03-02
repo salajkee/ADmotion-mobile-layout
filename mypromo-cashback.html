@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои акции - Создание кэшбека</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cabinet">
+            <header class="cabinet__header">
+                <nav class="cabinet__nav">
+                    <ul>
+                        <li><a href="#" class="cabinet__nav-link">О ПАРТНЕРЕ</a></li>
+                        <li><a href="#" class="cabinet__nav-link cabinet__nav-link-active">МОИ АКЦИИ</a></li>
+                        <li><a href="#" class="cabinet__nav-link">МОЙ QR</a></li>
+                        <li><a href="#" class="cabinet__nav-link">КЛИЕНТЫ</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="promo">
+            <div class="promo__title">
+                СОЗДАВАЙТЕ <br> КРУТЫЕ АКЦИИ
+            </div>
+            <div class="promo__nav">
+                <ul>
+                    <li><a href="#" class="promo__nav-link">приз</a></li>
+                    <li><a href="#" class="promo__nav-link">скидка</a></li>
+                    <li><a href="#" class="promo__nav-link promo__nav-link-active">cashback</a></li>
+                    <li><a href="#" class="promo__nav-link">промокод</a></li>
+                </ul>
+            </div>
+            <form action="/" class="promo__cashback-form">
+                <div class="promo__cashback-input-block">
+                    <label for="cashback-name">Название подарка</label>
+                    <textarea name="cashback-name" placeholder="Введите.."></textarea>
+                </div>
+                <div class="promo__cashback-input-block">
+                    <label for="cashback-quantity">Количество</label>
+                    <input type="text" name="cashback-quantity">
+                </div>
+                <div class="promo__cashback-input-block">
+                    <label for="cashback-amount">Размер cashback</label>
+                    <input type="text" name="cashback-amount">
+                </div>
+                <div class="promo__cashback-input-block">
+                    <label for="cashback-order">При заказе от</label>
+                    <input type="text" name="cashback-order">
+                </div>
+                <div class="promo__cashback-input-block">
+                    <label for="cashback-coeficent-winning">Коэф. выигрыша</label>
+                    <input type="text" name="cashback-coeficent-winning">
+                </div>
+                <div class="promo__cashback-input-block">
+                    <label for="cashback-time">Время действия</label>
+                    с <input type="text" name="cashback-time-s" class="time-s" value="21.01.2019">
+                    по <input type="text" name="cashback-time-po" class="time-po" value="21.01.2019">
+                </div>
+                <div class="promo__btn-block">
+                    <div class="promo__back-btn"><img src="images/cabinet/left-arrow.svg" alt="icon"> вернуться</div>
+                    <button type="submit" class="promo__form-btn">добавить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

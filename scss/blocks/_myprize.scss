@@ -1,0 +1,456 @@
+.myprize {
+    padding-top: 39px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-menu {
+            display: inline-block;
+            margin-right: 6px;
+        }
+        &-location {
+            display: inline-block;
+            margin-right: 9px;
+        }
+        &-checkbox {
+            margin-right: 7px;
+            width: 30px;
+            height: 16px;
+            input[type="checkbox"] {
+                margin: 0;
+                position: relative;
+                width: 30px;
+                height: 16px;
+                border-radius: 8px;
+                -webkit-appearance: none;
+                background: #ECECEC;
+                outline: none;
+                transition-duration: 300ms;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    top: -1px;
+                    left: -3px;
+                    background: linear-gradient(180deg, #878787 0%, #B3B3B3 100%);
+                    transition-duration: 300ms;
+                }
+            }
+            input:checked[type="checkbox"] {
+                background: #ECECEC;
+                &::before {
+                    left: 15px;
+                    background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+                }
+            }
+        }
+    }
+    &__nav {
+        ul {
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            column-gap: 17px;
+        }
+        &-link {
+            font-size: 16px;
+            font-weight: 700;
+            color: #717171;
+            &-active {
+                position: relative;
+                background: -webkit-linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 5px;
+                    background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+                    position: absolute;
+                    left: 0;
+                    border-radius: 6px;
+                    bottom: -8px;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        margin-top: 38px;
+        padding-bottom: 88px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        column-gap: 16px;
+        padding-bottom: 19.5px;
+        padding-top: 19.5px;
+        border-bottom: 1px solid #ECECEC;
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+        &:first-child {
+            padding-top: 0;
+        }
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo {
+        width: 89px;
+        height: 89px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #F8F8F8;
+        border-radius: 50%;
+    }
+    &__name {
+        margin-top: 8px;
+        font-size: 19px;
+        font-weight: 700;
+        color: #717171;
+    }
+    &__date {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        &-time {
+            font-size: 15px;
+            font-weight: 600;
+            color: #717171;
+        }
+    }
+    &__status {
+        margin-right: 20px;
+        margin-top: 9px;
+        margin-bottom: 15px;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 10px;
+        &-result {
+            font-size: 15px;
+            font-weight: 600;
+            color: #717171;
+        }
+    }
+    &__balance {
+        margin-top: 9px;
+        margin-bottom: 15px;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 7px;
+        &-sum {
+            font-size: 15px;
+            font-weight: 600;
+            color: #717171;
+        }
+    }
+    &__card {
+        position: relative;
+        &-text {
+            position: absolute;
+            top: 12px;
+            left: 5px;
+            width: 118px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+    }
+    &__footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 10px;
+        background: #fff;
+        &-wrapper {
+            display: flex;
+            align-items: flex-end;
+            column-gap: 62px;
+            justify-content: center;
+        }
+        .myprize__profile {
+            position: relative;
+            width: 46px;
+            display: flex;
+            justify-content: center;
+        }
+        .myprize__prizes {
+            width: 46px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            &-active {
+                position: absolute;
+                top: -18px;
+                right: 0;
+            }
+        }
+        .myprize__scanner {
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border: 4px solid #A6A6A6;
+            border-radius: 50%;
+            position: relative;
+            animation: pulseGray 5s infinite;
+            &-border {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border: 4px solid #838383;
+                border-radius: 50%;
+            }
+        }       
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .myprize {
+        padding-top: 39px;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-menu {
+                display: inline-block;
+                margin-right: 6px;
+            }
+            &-location {
+                display: inline-block;
+                margin-right: 9px;
+            }
+            &-checkbox {
+                margin-right: 7px;
+                width: 30px;
+                height: 16px;
+                input[type="checkbox"] {
+                    margin: 0;
+                    position: relative;
+                    width: 30px;
+                    height: 16px;
+                    border-radius: 8px;
+                    -webkit-appearance: none;
+                    background: #ECECEC;
+                    outline: none;
+                    transition-duration: 300ms;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        top: -1px;
+                        left: -3px;
+                        background: linear-gradient(180deg, #878787 0%, #B3B3B3 100%);
+                        transition-duration: 300ms;
+                    }
+                }
+                input:checked[type="checkbox"] {
+                    background: #ECECEC;
+                    &::before {
+                        left: 15px;
+                        background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+                    }
+                }
+            }
+        }
+        &__nav {
+            ul {
+                padding-left: 0;
+                display: flex;
+                align-items: center;
+                column-gap: 17px;
+            }
+            &-link {
+                font-size: 16px;
+                font-weight: 700;
+                color: #717171;
+                &-active {
+                    position: relative;
+                    background: -webkit-linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 5px;
+                        background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+                        position: absolute;
+                        left: 0;
+                        border-radius: 6px;
+                        bottom: -8px;
+                    }
+                }
+            }
+        }
+        &__wrapper {
+            margin-top: 38px;
+            padding-bottom: 88px;
+        }
+        &__item {
+            display: flex;
+            justify-content: center;
+            column-gap: 16px;
+            padding-bottom: 19.5px;
+            padding-top: 19.5px;
+            border-bottom: 1px solid #ECECEC;
+            &:last-child {
+                border: none;
+                padding-bottom: 0;
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+        &__left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__logo {
+            width: 89px;
+            height: 89px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #F8F8F8;
+            border-radius: 50%;
+        }
+        &__name {
+            margin-top: 8px;
+            font-size: 19px;
+            font-weight: 700;
+            color: #717171;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            &-time {
+                font-size: 15px;
+                font-weight: 600;
+                color: #717171;
+            }
+        }
+        &__status {
+            margin-right: 20px;
+            margin-top: 9px;
+            margin-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            column-gap: 10px;
+            &-result {
+                font-size: 15px;
+                font-weight: 600;
+                color: #717171;
+            }
+        }
+        &__balance {
+            margin-top: 9px;
+            margin-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            column-gap: 7px;
+            &-sum {
+                font-size: 15px;
+                font-weight: 600;
+                color: #717171;
+            }
+        }
+        &__card {
+            position: relative;
+            &-text {
+                position: absolute;
+                top: 12px;
+                left: 5px;
+                width: 118px;
+                font-size: 13px;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+        &__footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            padding-bottom: 10px;
+            background: #fff;
+            &-wrapper {
+                display: flex;
+                align-items: flex-end;
+                column-gap: 62px;
+                justify-content: center;
+            }
+            .myprize__profile {
+                position: relative;
+                width: 46px;
+                display: flex;
+                justify-content: center;
+            }
+            .myprize__prizes {
+                width: 46px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                &-active {
+                    position: absolute;
+                    top: -18px;
+                    right: 0;
+                }
+            }
+            .myprize__scanner {
+                display: flex;  
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                border: 4px solid #A6A6A6;
+                border-radius: 50%;
+                position: relative;
+                animation: pulseGray 5s infinite;
+                &-border {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border: 4px solid #838383;
+                    border-radius: 50%;
+                }
+            }       
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .myprize {
+        &__nav {
+            ul {
+                column-gap: 10px;
+            }
+            &-link {
+                font-size: 14px;
+            }
+        }
+        &__footer {
+            margin-top: 125px;
+        }
+    }
+}

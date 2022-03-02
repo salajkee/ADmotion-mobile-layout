@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты - маркетинг- деньги</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cabinet">
+            <header class="cabinet__header">
+                <nav class="cabinet__nav">
+                    <ul>
+                        <li><a href="#" class="cabinet__nav-link">О ПАРТНЕРЕ</a></li>
+                        <li><a href="#" class="cabinet__nav-link">МОИ АКЦИИ</a></li>
+                        <li><a href="#" class="cabinet__nav-link">МОЙ QR</a></li>
+                        <li><a href="#" class="cabinet__nav-link cabinet__nav-link-active">КЛИЕНТЫ</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="clients">
+                <div class="clients__stat">
+                    <div class="clients__stat-item">
+                        <p class="clients__stat-text">Кол-во <br> клиентов <br> <span>350</span></p>
+                    </div>
+                    <div class="clients__stat-item">
+                        <p class="clients__stat-text">Кол-во <br> покупок <br> <span>12350</span></p>
+                    </div>
+                    <div class="clients__stat-item">
+                        <p class="clients__stat-text">MAX <br> покупока <br> <span>125500</span></p>
+                    </div>
+                    <div class="clients__stat-item">
+                        <p class="clients__stat-text">Получили <br> призов <br> <span>120</span></p>
+                    </div>
+                </div>
+                <div class="clients__filter">
+                    <ul>
+                        <li><a href="#" class="clients__filter-link clients__filter-link-active">сегодня</a></li>
+                        <li><a href="#" class="clients__filter-link">месяц</a></li>
+                        <li><a href="#" class="clients__filter-link">за всё время</a></li>
+                        <li><a href="#" class="clients__filter-link">указать период</a></li>
+                    </ul>
+                </div>
+                <div class="clients__nav">
+                    <ul>
+                        <li><a class="clients__nav-link clients__nav-link-active" href="#">пользователи</a></li>
+                        <li><a class="clients__nav-link" href="#">маркетинг</a></li>
+                    </ul>
+                </div>
+                <div class="clients__marketing">
+                    <div class="clients__marketing-text">
+                        Мотивируйте свою аудиторию возвращаться к вам снова и снова и совершать покупки чаще
+                    </div>
+                    <div class="clients__marketing-title">Что дарим?</div>
+                    <div class="clients__marketing-nav">
+                        <ul>
+                            <li><a href="#" class="clients__marketing-nav-link">приз</a></li>
+                            <li><a href="#" class="clients__marketing-nav-link">скидку</a></li>
+                            <li><a href="#" class="clients__marketing-nav-link is-active">деньги</a></li>
+                        </ul>
+                    </div>
+                    <div class="clients__money">
+                        <div class="clients__money-info">
+                            Полученные деньги клиент мсожет потратить только на покупки у вас
+                        </div>
+                        <form action="/" class="clients__money-form">
+                            <div class="clients__money-input-block">
+                                <label for="money-size">Размер скидки</label>
+                                <input type="text" name="money-size" value="80%">
+                            </div>
+                            <div class="clients__money-input-block">
+                                <label for="money-sum">Действует от</label>
+                                <input type="text" name="money-sum" value="5200 тг">
+                            </div>
+                            <div class="clients__money-input-block">
+                                <div class="clients__money-input-title">Время действия</div>
+                                с <input type="text" name="money-time-s" class="time-s" value="21.01.2019"> по <input type="text" name="money-time-po" class="time-po" value="21.01.2019">
+                            </div>
+                            <button type="submit" class="clients__money-btn">отправить</button>
+                        </form>
+                        <div class="clients__money-mark">
+                            <div class="clients__money-mark-title">Отметьте клиентов</div>
+                            <div class="clients__money-mark-form">
+                                <div class="clients__money-mark-input-block">
+                                    <label for="age">Укажите возраст</label>
+                                    от <input type="text" name="age"> до <input type="text" name="age">
+                                </div>
+                                <div class="clients__money-mark-sex">
+                                    <label for="sex">Выберите пол</label>
+                                    <div class="clients__money-mark-radio-block">
+                                        <input class="radio" type="radio" name="sex" id="male" value="М">
+                                        <label class="male" for="male">М</label>
+                                    </div>
+                                    <div class="clients__money-mark-radio-block">
+                                        <input class="radio" type="radio" name="sex" id="female" value="Ж">
+                                        <label class="female" for="female">Ж</label>
+                                    </div>
+                                </div>
+                                <div class="clients__money-mark-input-block">
+                                    <label for="num-purchases">Кол-во покупок</label>
+                                    от <input type="text" name="num-purchases">
+                                </div>
+                            </div>
+                            <div class="clients__money-mark-wrapper">
+                                <div class="clients__money-mark-block">
+                                    <div class="checked__text">Отмечено: <span id="current">0</span> из <span id="total"></span> чел</div>
+                                    <div class="checked__all-options">
+                                        <input class="option-all-input" type="checkbox" name="option-all" id="option-all" onchange="checkAll(this)">
+                                        <label class="option-all-lable" for="option-all"></label>
+                                        отметить всех
+                                    </div>
+                                </div>
+                                <div class="clients__money-mark-inner">
+                                    <div class="clients__money-mark-item">
+                                        <div class="checked__item">
+                                            <input type="checkbox" name="option-1" id="option-1" class="mark-input">
+                                            <label class="mark-label" for="option-1">
+                                                <img src="images/clients/logo.png" alt="">
+                                            </label>
+                                            <div class="checked__item-content">
+                                                <div class="checked__item-purchases-title">Покупки:</div>
+                                                <div class="checked__item-purchases-table">
+                                                    <div class="checked__item-purchases-table-head">
+                                                        <div class="checked__item-purchases-table-head-block">кол-во</div>
+                                                        <div class="checked__item-purchases-table-head-block">сумма</div>
+                                                    </div>
+                                                    <div class="checked__item-purchases-table-body">
+                                                        <div class="checked__item-purchases-table-body-block">1200</div>
+                                                        <div class="checked__item-purchases-table-body-block">12500тг</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checked__item">
+                                            <input type="checkbox" name="option-2" id="option-2" class="mark-input">
+                                            <label class="mark-label" for="option-2">
+                                                <img src="images/clients/logo.png" alt="">
+                                            </label>
+                                            <div class="checked__item-content">
+                                                <div class="checked__item-purchases-title">Покупки:</div>
+                                                <div class="checked__item-purchases-table">
+                                                    <div class="checked__item-purchases-table-head">
+                                                        <div class="checked__item-purchases-table-head-block">кол-во</div>
+                                                        <div class="checked__item-purchases-table-head-block">сумма</div>
+                                                    </div>
+                                                    <div class="checked__item-purchases-table-body">
+                                                        <div class="checked__item-purchases-table-body-block">1200</div>
+                                                        <div class="checked__item-purchases-table-body-block">12500тг</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clients__money-mark-item">
+                                        <div class="checked__item">
+                                            <input type="checkbox" name="option-3" id="option-3" class="mark-input">
+                                            <label class="mark-label" for="option-3">
+                                                <img src="images/clients/logo.png" alt="">
+                                            </label>
+                                            <div class="checked__item-content">
+                                                <div class="checked__item-purchases-title">Покупки:</div>
+                                                <div class="checked__item-purchases-table">
+                                                    <div class="checked__item-purchases-table-head">
+                                                        <div class="checked__item-purchases-table-head-block">кол-во</div>
+                                                        <div class="checked__item-purchases-table-head-block">сумма</div>
+                                                    </div>
+                                                    <div class="checked__item-purchases-table-body">
+                                                        <div class="checked__item-purchases-table-body-block">1200</div>
+                                                        <div class="checked__item-purchases-table-body-block">12500тг</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="checked__item">
+                                            <input type="checkbox" name="option-4" id="option-4" class="mark-input">
+                                            <label class="mark-label" for="option-4">
+                                                <img src="images/clients/logo.png" alt="">
+                                            </label>
+                                            <div class="checked__item-content">
+                                                <div class="checked__item-purchases-title">Покупки:</div>
+                                                <div class="checked__item-purchases-table">
+                                                    <div class="checked__item-purchases-table-head">
+                                                        <div class="checked__item-purchases-table-head-block">кол-во</div>
+                                                        <div class="checked__item-purchases-table-head-block">сумма</div>
+                                                    </div>
+                                                    <div class="checked__item-purchases-table-body">
+                                                        <div class="checked__item-purchases-table-body-block">1200</div>
+                                                        <div class="checked__item-purchases-table-body-block">12500тг</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/clients.js"></script>
+</body>
+</html>

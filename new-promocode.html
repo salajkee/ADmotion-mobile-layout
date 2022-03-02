@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель - Новый промокод</title>
+    <link rel="stylesheet" href="css/swiper-boundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="new-promocode">
+            <header class="new-promocode__header">
+                <nav class="new-promocode__nav">
+                    <ul>
+                        <li><a href="#" class="new-promocode__nav-link">ДАННЫЕ</a></li>
+                        <li><a href="#" class="new-promocode__nav-link new-promocode__nav-link-active">ПРОМОКОДЫ</a></li>
+                        <li><a href="#" class="new-promocode__nav-link">ПОЛЬЗОВАТЕЛИ</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="new-promocode__title">НОВЫЙ <br> ПРОМОКОД</div>
+            <form action="/" class="new-promocode__form">
+                <div class="new-promocode__checkbox-block">
+                    <div class="new-promocode__checkbox-text">
+                        <span>Скидка</span> <input type="checkbox" width="21px" height="11px"> деньги
+                    </div>
+                    <input type="text" name="promocode-amount">
+                </div>
+                <div class="new-promocode__input-block">
+                    <label for="new-promocode">Промокод</label>
+                    <input type="text" name="new-promocode">
+                </div>
+                <div class="new-promocode__input-block">
+                    <label for="new-promocode-quantity">Количество</label>
+                    <input type="text" name="new-promocode-quantity">
+                </div>
+                <button class="new-promocode__btn">создать</button>
+            </form>
+            <div class="new-promocode__tabs">
+                <div class="new-promocode__tabheader">
+                    <div class="new-promocode__tabheader-items">
+                        <div class="new-promocode__tabheader-item new-promocode__tabheader-item_active">активные</div>
+                        <div class="new-promocode__tabheader-item">прошедшие</div>
+                    </div>
+                </div>
+                <div class="new-promocode__tabcontent">
+                    <div class="new-promocode__tabcontent-wrapper">
+                        <div class="new-promocode__slider">
+                            <div class="swiper-wrapper">
+                                <div class="new-promocode__slider-item swiper-slide">
+                                    <div class="new-promocode__slider-promocode">newyear2019</div>
+                                    <div class="new-promocode__slider-text">
+                                        <p class="new-promocode__slider-activated">Активировали: <span>12900</span></p>
+                                        <p class="new-promocode__slider-shared">Поделились: <span>500</span></p>
+                                    </div>
+                                </div>
+                                <div class="new-promocode__slider-item swiper-slide">
+                                    <div class="new-promocode__slider-promocode">newyear2019</div>
+                                    <div class="new-promocode__slider-text">
+                                        <p class="new-promocode__slider-activated">Активировали: <span>12900</span></p>
+                                        <p class="new-promocode__slider-shared">Поделились: <span>500</span></p>
+                                    </div>
+                                </div>
+                                <div class="new-promocode__slider-item swiper-slide">
+                                    <div class="new-promocode__slider-promocode">newyear2019</div>
+                                    <div class="new-promocode__slider-text">
+                                        <p class="new-promocode__slider-activated">Активировали: <span>12900</span></p>
+                                        <p class="new-promocode__slider-shared">Поделились: <span>500</span></p>
+                                    </div>
+                                </div>
+                                <div class="new-promocode__slider-item swiper-slide">
+                                    <div class="new-promocode__slider-promocode">newyear2019</div>
+                                    <div class="new-promocode__slider-text">
+                                        <p class="new-promocode__slider-activated">Активировали: <span>12900</span></p>
+                                        <p class="new-promocode__slider-shared">Поделились: <span>500</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-promocode__tabcontent">
+                    <div class="new-promocode__tabcontent-wrapper">
+                        <div class="new-promocode__slider">
+                            <div class="swiper-wrapper">
+                                <div class="new-promocode__slider-item swiper-slide">
+                                    <div class="new-promocode__slider-promocode">newyear2019</div>
+                                    <div class="new-promocode__slider-text">
+                                        <p class="new-promocode__slider-activated">Активировали: <span>12900</span></p>
+                                        <p class="new-promocode__slider-shared">Поделились: <span>500</span></p>
+                                    </div>
+                                </div>
+                                <div class="new-promocode__slider-item swiper-slide">
+                                    <div class="new-promocode__slider-promocode">newyear2019</div>
+                                    <div class="new-promocode__slider-text">
+                                        <p class="new-promocode__slider-activated">Активировали: <span>12900</span></p>
+                                        <p class="new-promocode__slider-shared">Поделились: <span>500</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-promocode__footer">
+                <div class="new-promocode__footer-nav">
+                    <ul>
+                        <li><a href="#" class="new-promocode__footer-nav-link is-active">мой кабинет</a></li>
+                        <li><a href="#" class="new-promocode__footer-nav-link">партнеры</a></li>
+                        <li><a href="#" class="new-promocode__footer-nav-link">данные</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper-boundle.min.js"></script>
+    <script src="js/new-promocode.js"></script>
+</body>
+</html>

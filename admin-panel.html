@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель - Пользователи</title>
+    <script src="https://kit.fontawesome.com/e294a4845f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/swiper-boundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="admin-panel">
+            <div class="admin-panel__search-box">
+                <input type="text" placeholder="Начните вводить  название партнёра">
+                <button class="admin-panel__search-btn"><img src="images/admin-panel/search-icon.svg" alt="search"></button>
+            </div>
+            <div class="admin-panel__info">Показать данные за:</div>
+            <div class="admin-panel__nav">
+                <ul>
+                    <li><a href="#" class="admin-panel__nav-link is-active">сегодня</a></li>
+                    <li><a href="#" class="admin-panel__nav-link">месяц</a></li>
+                    <li><a href="#" class="admin-panel__nav-link">за всё время</a></li>
+                    <li><a href="#" class="admin-panel__nav-link">указать период</a></li>
+                </ul>
+            </div>
+            <div class="admin-panel__wrapper">
+                <div class="admin-panel__inner">
+                    <div class="admin-panel__profile">
+                        <div class="admin-panel__profile-logo"><img src="images/admin-panel/logo.png" alt="logo"></div>
+                        <div class="admin-panel__profile-name">KFC</div>
+                    </div>
+                    <div class="admin-panel__statisic-block">
+                        <div class="admin-panel__statistic-top">
+                            <div class="admin-panel__wallet">
+                                <img src="images/admin-panel/wallet-icon.svg" alt="">
+                                <p class="admin-panel__wallet-sum">на счету <br> <span>250 ₸</span></p>
+                            </div>
+                            <div class="admin-panel__persent">
+                                <img src="images/admin-panel/persent-icon.svg" alt="">
+                                <p class="admin-panel__persent-tarif">тариф <br> <span>8%</span></p>
+                            </div>
+                        </div>
+                        <div class="admin-panel__statistic-list">
+                            <p class="admin-panel__statistic-transactions">Кол-во транзакций: <span> 1110</span></p>
+                            <p class="admin-panel__statistic-order-sum">Сред. сумма заказа: <span>5230₸</span></p>
+                            <p class="admin-panel__statistic-income-today">Доход за сегодня: <span>112500₸</span></p>
+                            <p class="admin-panel__statistic-income-month">Доход за месяц: <span>2351342134₸</span></p>
+                            <p class="admin-panel__statistic-income-alltime">Доход общий: <span>2533241234₸</span></p>
+                            <p class="admin-panel__statistic-withdrawn">Выведено: <span>12222222₸</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-panel__promo-title">Акции</div>
+                <div class="admin-panel__tabs">
+                    <div class="admin-panel__tabheader">
+                        <div class="admin-panel__tabheader-items">
+                            <div class="admin-panel__tabheader-item admin-panel__tabheader-item_active">активные</div>
+                            <div class="admin-panel__tabheader-item">прошедшие</div>
+                        </div>
+                    </div>
+                    <div class="admin-panel__tabcontent admin-panel__slider">
+                        <div class="swiper-wrapper">
+                            <div class="admin-panel__slider-item swiper-slide">
+                                <div class="admin-panel__slider-statistic">
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-quantity">Кол-во: <span>10</span></p>
+                                        <p class="admin-panel-slider-statistic-remains">Остаток: <span>2</span></p>
+                                        <p class="admin-panel-slider-statistic-clients">Клиентов: <span>6</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-ordering">При заказе от: <span>5000</span></p>
+                                        <p class="admin-panel-slider-statistic-winnig-coefficient">Коэф выигр.: <span>80%</span></p>
+                                        <p class="admin-panel-slider-statistic-income">Доход: <span>250000₸</span></p>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__slider-rating-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="admin-panel__slider-rating">Оценка акции: <span>4.6</span></p>
+                                    <a href="#" class="admin-panel__slider-review-link">отзывы</a>
+                                </div>
+                                <div class="admin-panel__slider-card">
+                                    <img src="images/admin-panel/element.svg" alt="element">
+                                    <p>Баскет 25 крыльев <br>
+                                        при заказе от 5000₸</p>
+                                </div>
+                            </div>
+                            <div class="admin-panel__slider-item swiper-slide">
+                                <div class="admin-panel__slider-statistic">
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-quantity">Кол-во: <span>10</span></p>
+                                        <p class="admin-panel-slider-statistic-remains">Остаток: <span>2</span></p>
+                                        <p class="admin-panel-slider-statistic-clients">Клиентов: <span>6</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-ordering">При заказе от: <span>5000</span></p>
+                                        <p class="admin-panel-slider-statistic-winnig-coefficient">Коэф выигр.: <span>80%</span></p>
+                                        <p class="admin-panel-slider-statistic-income">Доход: <span>250000₸</span></p>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__slider-rating-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="admin-panel__slider-rating">Оценка акции: <span>4.6</span></p>
+                                    <a href="#" class="admin-panel__slider-review-link">отзывы</a>
+                                </div>
+                                <div class="admin-panel__slider-card">
+                                    <img src="images/admin-panel/element.svg" alt="element">
+                                    <p>Баскет 25 крыльев <br>
+                                        при заказе от 5000₸</p>
+                                </div>
+                            </div>
+                            <div class="admin-panel__slider-item swiper-slide">
+                                <div class="admin-panel__slider-statistic">
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-quantity">Кол-во: <span>10</span></p>
+                                        <p class="admin-panel-slider-statistic-remains">Остаток: <span>2</span></p>
+                                        <p class="admin-panel-slider-statistic-clients">Клиентов: <span>6</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-ordering">При заказе от: <span>5000</span></p>
+                                        <p class="admin-panel-slider-statistic-winnig-coefficient">Коэф выигр.: <span>80%</span></p>
+                                        <p class="admin-panel-slider-statistic-income">Доход: <span>250000₸</span></p>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__slider-rating-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="admin-panel__slider-rating">Оценка акции: <span>4.6</span></p>
+                                    <a href="#" class="admin-panel__slider-review-link">отзывы</a>
+                                </div>
+                                <div class="admin-panel__slider-card">
+                                    <img src="images/admin-panel/element.svg" alt="element">
+                                    <p>Баскет 25 крыльев <br>
+                                        при заказе от 5000₸</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="admin-panel__tabcontent admin-panel__slider">
+                        <div class="swiper-wrapper">
+                            <div class="admin-panel__slider-item swiper-slide">
+                                <div class="admin-panel__slider-statistic">
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-quantity">Кол-во: <span>10</span></p>
+                                        <p class="admin-panel-slider-statistic-remains">Остаток: <span>2</span></p>
+                                        <p class="admin-panel-slider-statistic-clients">Клиентов: <span>6</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-ordering">При заказе от: <span>5000</span></p>
+                                        <p class="admin-panel-slider-statistic-winnig-coefficient">Коэф выигр.: <span>80%</span></p>
+                                        <p class="admin-panel-slider-statistic-income">Доход: <span>250000₸</span></p>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__slider-rating-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="admin-panel__slider-rating">Оценка акции: <span>4.6</span></p>
+                                    <a href="#" class="admin-panel__slider-review-link">отзывы</a>
+                                </div>
+                                <div class="admin-panel__slider-card">
+                                    <img src="images/admin-panel/element.svg" alt="element">
+                                    <p>Баскет 25 крыльев <br>
+                                        при заказе от 5000₸</p>
+                                </div>
+                            </div>
+                            <div class="admin-panel__slider-item swiper-slide">
+                                <div class="admin-panel__slider-statistic">
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-quantity">Кол-во: <span>10</span></p>
+                                        <p class="admin-panel-slider-statistic-remains">Остаток: <span>2</span></p>
+                                        <p class="admin-panel-slider-statistic-clients">Клиентов: <span>6</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-ordering">При заказе от: <span>5000</span></p>
+                                        <p class="admin-panel-slider-statistic-winnig-coefficient">Коэф выигр.: <span>80%</span></p>
+                                        <p class="admin-panel-slider-statistic-income">Доход: <span>250000₸</span></p>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__slider-rating-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="admin-panel__slider-rating">Оценка акции: <span>4.6</span></p>
+                                    <a href="#" class="admin-panel__slider-review-link">отзывы</a>
+                                </div>
+                                <div class="admin-panel__slider-card">
+                                    <img src="images/admin-panel/element.svg" alt="element">
+                                    <p>Баскет 25 крыльев <br>
+                                        при заказе от 5000₸</p>
+                                </div>
+                            </div>
+                            <div class="admin-panel__slider-item swiper-slide">
+                                <div class="admin-panel__slider-statistic">
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-quantity">Кол-во: <span>10</span></p>
+                                        <p class="admin-panel-slider-statistic-remains">Остаток: <span>2</span></p>
+                                        <p class="admin-panel-slider-statistic-clients">Клиентов: <span>6</span></p>
+                                    </div>
+                                    <div>
+                                        <p class="admin-panel-slider-statistic-ordering">При заказе от: <span>5000</span></p>
+                                        <p class="admin-panel-slider-statistic-winnig-coefficient">Коэф выигр.: <span>80%</span></p>
+                                        <p class="admin-panel-slider-statistic-income">Доход: <span>250000₸</span></p>
+                                    </div>
+                                </div>
+                                <div class="admin-panel__slider-rating-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p class="admin-panel__slider-rating">Оценка акции: <span>4.6</span></p>
+                                    <a href="#" class="admin-panel__slider-review-link">отзывы</a>
+                                </div>
+                                <div class="admin-panel__slider-card">
+                                    <img src="images/admin-panel/element.svg" alt="element">
+                                    <p>Баскет 25 крыльев <br>
+                                        при заказе от 5000₸</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-panel__footer">
+                <div class="admin-panel__footer-nav">
+                    <ul>
+                        <li><a href="#" class="admin-panel__footer-nav-link">мой кабинет</a></li>
+                        <li><a href="#" class="admin-panel__footer-nav-link">партнеры</a></li>
+                        <li><a href="#" class="admin-panel__footer-nav-link is-active">данные</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper-boundle.min.js"></script>
+    <script src="js/admin-panel.js"></script>
+</body>
+</html>
